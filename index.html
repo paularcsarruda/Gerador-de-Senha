@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerenciador de Senhas</title>
+</head>
+<body>
+    <main class="container">
+        <img class="logo" src="./assets/logo.png" alt="logo do gerenciador de senhas">
+        <h1 class="title">PwD</h1>
+        <p class="paragraphy">Fortaleça sua segurança, gere uma senha única!</p>
+    <section>
+            <form onsubmit="gerarSenha(event)" class="form">
+            <label for="">Número de Caracteres:</label>
+            <input
+            id="password"
+            class="input"
+            type="number"
+            min="8"
+            max="20"
+            required
+            />
+
+            <input
+            class="button"
+            type="submit" 
+            value="Gerar Senha"
+            />
+        </form>
+
+        <section id="content-result" class="result hide"> <!-- section e main são basicamente a mesma coisa -->
+            <span id="text-result">Senha Gerada:</span>
+            <span id="senha-result">&H56jst0$ms</span>
+        </section>
+    </section>
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
